@@ -20,6 +20,10 @@ git push -u origin master
 # git branch
 # git mv README.rdoc README.md
 # git status
+# git checkout master
+# git merge modify-README
+# git branch -d modify-README # not needed
+# git branch -D modify-README # not needed / delete branch without merging
 #rails generate scaffold target grade:string
 #rails generate scaffold subject name:string
 #rails generate scaffold unit name:string summary:text
