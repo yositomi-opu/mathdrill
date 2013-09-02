@@ -14,7 +14,7 @@ development:
   database: mathdrill_development
   pool: 5
   username: root
-  password: YYYY
+  password: f00bar1966
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
@@ -26,7 +26,7 @@ test:
   database: mathdrill_test
   pool: 5
   username: root
-  password: ZZZZ
+  password: f00bar1966
   socket: /tmp/mysql.sock
 
 production:
@@ -35,5 +35,5 @@ production:
   database: mathdrill_production
   pool: 5
   username: root
-  password: XXXX
+  password: f00bar1966
   socket: /tmp/mysql.sock
