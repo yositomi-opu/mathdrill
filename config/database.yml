@@ -26,14 +26,14 @@ test:
   database: mathdrill_test
   pool: 5
   username: root
-  password: f00bar1966
+  password:
   socket: /tmp/mysql.sock
 
 production:
-  adapter: mysql2
+  adapter: pgsql
   encoding: utf8
   database: mathdrill_production
   pool: 5
   username: root
-  password: f00bar1966
+  password: 
   socket: /tmp/mysql.sock

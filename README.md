@@ -1,6 +1,7 @@
-## mathdrill   
+mathdrill
+=========
 
-This is application for sharing database of math drill problems  
+This is application for sharing database of math drill problems
 mainly for college mathematics, linear algebra, calculus etc...  
 
 Initially this app created as follows.   
@@ -24,9 +25,11 @@ Initially this app created as follows.
     # git merge modify-README
     # git branch -d modify-README # not needed
     # git branch -D modify-README # not needed / delete branch without merging
-    # rails generate scaffold target grade:string
+    rails generate scaffold target grade:string
+    cd db/migrate
+    # vim xxxx.rb (add : precision:2 scale:0)
     # rails generate scaffold subject name:string
     # rails generate scaffold unit name:string summary:text
     # rails generate scaffold theme title:string
     
-     # rake db:create
+    # rake db:create
