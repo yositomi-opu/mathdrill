@@ -46,7 +46,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-gem 'bcrypt-ruby', '3.0.1'
+gem 'bcrypt-ruby'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -56,4 +56,5 @@ gem 'bcrypt-ruby', '3.0.1'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'factory_girl_rails', '>=4.2.1'
 
