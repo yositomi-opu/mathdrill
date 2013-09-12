@@ -47,6 +47,9 @@ end
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt-ruby'
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -58,3 +61,7 @@ gem 'bcrypt-ruby'
 # gem 'debugger', group: [:development, :test]
 gem 'factory_girl_rails', '>=4.2.1'
 
+group :test do
+gem 'cucumber-rails', '1.3.0', :require => false
+gem 'database_cleaner', github: 'bmabey/database_cleaner'
+end
