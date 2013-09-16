@@ -3,12 +3,20 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 gem 'bootstrap-sass'
+gem 'bcrypt-ruby'
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
+gem 'rails_12factor', '0.0.2'
+
 gem 'rspec-rails'
-gem 'capybara'
+gem 'capybara', '2.1.0'
 gem 'spork-rails', github: 'sporkrb/spork-rails'
 gem 'guard-spork'
 gem 'childprocess'
 
+#gem 'rubyzip', :require => 'zip/zip'
+gem 'rubyzip',  "~> 0.9.9"
 
 # Use mysql as the database for Active Record
 #group :development do
@@ -20,13 +28,13 @@ gem 'mysql2'
 #end
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '4.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '2.1.1'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -38,7 +46,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -46,10 +54,6 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-gem 'bcrypt-ruby'
-gem 'faker'
-gem 'will_paginate'
-gem 'bootstrap-will_paginate'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -59,9 +63,13 @@ gem 'bootstrap-will_paginate'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-gem 'factory_girl_rails', '>=4.2.1'
+# gem 'factory_girl_rails', '>= 4.2.1'
 
 group :test do
-gem 'cucumber-rails', '1.3.0', :require => false
-gem 'database_cleaner', github: 'bmabey/database_cleaner'
+  gem 'selenium-webdriver', '2.0.0'
+#  gem 'capybara', '2.1.0'
+  gem 'factory_girl_rails', '>= 4.2.1'
+  gem 'cucumber-rails', '1.3.0', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
+
